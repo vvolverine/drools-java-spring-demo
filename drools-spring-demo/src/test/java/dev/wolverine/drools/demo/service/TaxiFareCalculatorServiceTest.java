@@ -1,4 +1,4 @@
-package com.baeldung.spring.drools.service;
+package dev.wolverine.drools.demo.service;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.baeldung.spring.drools.model.Fare;
-import com.baeldung.spring.drools.model.TaxiRide;
+import dev.wolverine.drools.demo.model.Fare;
+import dev.wolverine.drools.demo.model.TaxiRide;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
