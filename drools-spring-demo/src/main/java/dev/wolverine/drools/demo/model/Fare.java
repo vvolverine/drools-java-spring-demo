@@ -21,6 +21,6 @@ public class Fare {
     }
 
     public Long getTotalFare() {
-        return nightSurcharge + rideFare;
+        return this.nightSurcharge + this.rideFare;
     }
 }

@@ -16,7 +16,8 @@ public class ApplicationRunner {
         taxiRide.setIsNightSurcharge(true);
         taxiRide.setDistanceInMile(190L);
         Fare rideFare = new Fare();
-        taxiFareCalculatorService.calculateFare(taxiRide, rideFare);
+        Long ourRideCost = taxiFareCalculatorService.calculateFare(taxiRide, rideFare);
+        System.out.println("Our ride cost is: " + ourRideCost);
     }
 
 }

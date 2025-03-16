@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("dev.wolverine.drools.demo")
 public class TaxiFareConfiguration {
-    private static final String TAXI_RULES = "taxi_fare_rules.drl";
+    private static final String TAXI_RULES = "dev/wolverine/drools/demo/rules/taxi_fare_rules.drl";
 
     @Bean
     public KieContainer kieContainer() {
