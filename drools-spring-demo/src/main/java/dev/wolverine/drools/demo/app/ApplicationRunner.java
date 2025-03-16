@@ -1,4 +1,4 @@
-package dev.wolverine.drools.demo.app
+package dev.wolverine.drools.demo.app;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
