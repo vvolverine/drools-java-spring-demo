@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import dev.wolverine.flowable.demo.service.ArticleWorkflowService;
+import dev.wolverine.flowable.demo.domain.Article;
+import dev.wolverine.flowable.demo.domain.Approval;
 
 @RestController
 public class ArticleWorkflowController {
@@ -23,16 +25,16 @@ public class ArticleWorkflowController {
 
     @PostMapping("/submit")
     public void submit(@RequestBody Article article) {
-        service.startProcess(article);
+        articleWorkflowService.startProcess(article);
     }
 
     @GetMapping("/tasks")
     public List<Article> getTasks(@RequestParam String assignee) {
-        return service.getTasks(assignee);
+        return articleWorkflowService.getTasks(assignee);
     }
-    
+
     @PostMapping("/review")
     public void review(@RequestBody Approval approval) {
-        service.submitReview(approval);
+        articleWorkflowService.submitReview(approval);
     }
 }

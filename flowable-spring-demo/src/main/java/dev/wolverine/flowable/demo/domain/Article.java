@@ -6,6 +6,20 @@ public class Article {
     private String author;
     private String url;
 
+    public Article() {
+    }
+
+    public Article(String author, String url) {
+        this.author = author;
+        this.url = url;
+    }
+
+    public Article(String id, String author, String url) {
+        this.id = id;
+        this.author = author;
+        this.url = url;
+    }
+
     public String getId() {
         return this.id;
     }
