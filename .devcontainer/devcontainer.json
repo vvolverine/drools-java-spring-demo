@@ -26,8 +26,13 @@
 	  		// Add the IDs of extensions you want installed when the container is created.
 	  		"extensions": [
 				"streetsidesoftware.code-spell-checker",
-				"vscjava.vscode-java-pack"
-	  		]
+				"vscjava.vscode-java-pack",
+				"rafaelrenanpacheco.darcula-theme",
+				"afmicc.GetterAndSetterGenerator",
+				"codezombiech.gitignore",
+				"vscjava.vscode-spring-initializr",
+				"jim-moody.drools"
+			]
 		}
   	}	
 
